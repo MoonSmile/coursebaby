@@ -1,0 +1,63 @@
+<html>
+<head>SchoolBadge.jpg
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="keywords" content="课程宝">
+    <title>课程宝选课查课一点通</title>
+    <!--<link rel="shortcut icon" href="index.png">-->
+    <!--<link rel="icon" href="/pku_favicon.ico" mce_href="/pku_favicon.ico" type="image/x-icon">-->
+
+    <link rel="shortcut icon" href="pku_favicon.ico" mce_href="pku_favicon.ico" type="image/x-icon">
+    <link rel="icon" href="pku_favicon.ico" mce_href="pku_favicon.ico" type="image/x-icon">
+    <link href="http://cdn.bootcss.com/jquery-mobile/1.4.5/jquery.mobile.min.css" rel="stylesheet">
+    <script src="http://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery-mobile/1.4.5/jquery.mobile.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).on("pageinit","#page_main",function(){
+            $("a").on("tap",function(){
+            });
+        });
+
+        function tabPageChange(href) {
+            $('#tabPage').load(href);
+
+        }
+
+    </script>
+    <style type="text/css">
+
+        #tabPage{width:auto;height:auto;border:1px solid;}
+
+    </style>
+</head>
+<body>
+
+<div data-role="page" id="page_main">
+
+    <div class="ui-grid-a" style="margin:0 auto;">
+        <div data-role="content">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" onclick="tabPageChange('recommended_course.html')">推荐课程</a></li>
+                    <li><a href="#" >我的课表</a></li>
+                </ul>
+            </div>
+            <div id="tabPage"></div>
+        </div>
+        <p></p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar" id="'pagenavi" >
+            <ul>
+                <li><a href=# data-icon="home" class="home">课程树</a></li>
+                <li><a href="Recommended.html" data-icon="grid">全部课程</a></li>
+                <li><a href=# data-icon="check">选课单确认</a></li>
+                <li><a href="#" data-icon="user">我的</a></li>
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
