@@ -1,0 +1,239 @@
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link rel="stylesheet" href="jquery/jquery.mobile-1.4.5.min.css">
+  <script  src="jquery-1.11.1.min.js"></script>
+  <script>
+    $(document).bind('mobileinit',function(){
+        $.mobile.changePage.defaults.changeHash = false;
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+    });
+</script> 
+<script  src="jquery/jquery.mobile-1.4.5.min.js"></script>
+		
+   <title></title>
+   <style type="text/css">
+     td.green{
+      background: green;
+     }
+     td.red{
+      background: red;
+     }
+     td.yellow{
+      background: yellow;
+     }
+     td.blue{
+      background: blue;
+     }
+   </style>
+ </head>
+ <body>
+ <div data-role="page">
+   <div data-role="header">
+    <h1>欢迎访问我的主页</h1>
+  </div>
+  <a href="#positionWindow" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-rel="popup" data-position-to="window" style="display: none;"><span id="awindowopen" >position in window</span></a>
+	 <div data-role="popup" id="positionWindow" class="ui-content" data-theme="a">
+	 <a href="http://www.baidu.com"><p>I am positioned to the window</p></a>
+	 <a href="http://www.baidu.com"><p>I am positioned to the window</p></a>
+	 </div>
+  <div data-role="content">
+   <table data-role="table" id="table-column-toggle" data-mode="reflow"  class="ui-responsive table-stroke">
+      <thead>
+        <tr>
+          <td></td>
+          <td>星期一</td>
+          <td>星期二</td>
+          <td>星期三</td>
+          <td>星期四</td>
+          <td>星期五</td>
+          <td>星期六</td>
+          <td>星期天</td>
+        </tr>
+	    </thead>
+        <tbody>
+        <tr>
+          <td class="time">08:00<br>第1节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>09:00<br>第2节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">10:10<br>第3节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">11:10<br>第4节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">13:00<br>第5节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">14:00<br>第6节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">15:10<br>第7节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">16:10<br>第8节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">17:10<br>第9节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">18:40<br>第10节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">19:40<br>第11节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="time">20:40<br>第12节</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+		</tbody>
+      </table>
+	  </div>
+     <div data-role="footer">
+       <h1>页脚文本</h1>
+     </div>
+	  </div>
+ </body>
+    
+    <script type="text/javascript">
+       var data=[
+                  [{class:"算法",from:1,to:2,url:"http://www.baidu.com"},{class:"数据挖掘",from:3,to:4,url:"http://www.baidu.com"},{class:"英语",from:5,to:8,url:"http://www.baidu.com"},{class:"NLP",from:6,to:7,url:"http://www.baidu.com"},{class:"金融数据分析",from:11,to:12,url:"http://www.baidu.com"}],
+                  [{class:"算法",from:3,to:4,url:"http://www.baidu.com"}],
+                  [{class:"数据结构",from:7,to:8,url:"http://www.baidu.com"},{class:"数据挖掘",from:3,to:4,url:"http://www.baidu.com"},{class:"自然辩证法",from:5,to:8,url:"http://www.baidu.com"},{class:"体育",from:6,to:7,url:"http://www.baidu.com"}],
+                  [{class:"物联网金融",from:1,to:2,url:"http://www.baidu.com"},{class:"英语",from:1,to:2,url:"http://www.baidu.com"} ,{class:"算法",from:5,to:6,url:"http://www.baidu.com"}],
+                  [{class:"算法",from:9,to:10,url:"http://www.baidu.com"},{class:"互联网技术",from:3,to:4,url:"http://www.baidu.com"},{class:"大数据专题",from:5,to:8,url:"http://www.baidu.com"},{class:"体育",from:6,to:7,url:"http://www.baidu.com"}],
+                  [{class:"英语",from:11,to:12,url:"http://www.baidu.com"},{class:"大数据专题",from:3,to:4,url:"http://www.baidu.com"},{class:"互联网技术",from:5,to:8,url:"http://www.baidu.com"}],
+                  []
+                 ];
+	  $(function () {
+
+        var colors=["green","red","blue","yellow"]
+        for (var i = 0; i < data.length; i++) {
+          if(data[i].length>0){
+            for(var k=0;k<data[i].length;k++){
+              for(var j=parseInt(data[i][k].from);j<=parseInt(data[i][k].to);j++){
+                //alert($("table tr:eq(i) td:eq(j)"));
+                if(j==data[i][k].from){$("table tr:eq("+j+") td:eq("+(i+1)+")").html(data[i][k].class)}
+                $("table tr:eq("+j+") td:eq("+(i+1)+")").attr("class",colors[k%4]);
+              }
+            }
+          }
+        }
+      });
+	 <!-- $("td").click(function(){
+		<!--alert(this.parentNode.rowIndex);
+		<!--alert(this.cellIndex);
+	   <!--}); -->
+	  $("td").click(function(){
+		var row = this.parentNode.rowIndex;
+		var col = this.cellIndex;
+		var day = data[col-1];
+		var list=[];
+		var c=0; 
+		for(var i=0;i<day.length;i++){
+			if(day[i].from<=row&&day[i].to>=row){
+				list[c++]=day[i] ;
+				<!--alert(day[i].class); -->
+			}
+		}
+		if(list.length==1){
+			window.open(list[0].url);
+		}else if(list.length>1){
+			var txt= "";
+			for(var i=0;i<list.length;i++){
+				txt+='<a href='+list[i].url+' target=_blank><p>'+list[i].class+'--\></p></a><br>'
+			}
+			$('#positionWindow').html(txt);
+			$('#awindowopen').trigger("click");
+		}
+				
+	  });
+	 
+  </script>
+ </html>
