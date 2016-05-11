@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "Shortcut Icon" href="img/logo.png">
+    <title>全部课表</title>
+    <link href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet">
+    <script src="jquery-1.12.3.min.js"></script>
+    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    </script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header">
+        <a href="#" data-role="button" data-icon="home">返回微信</a>
+        <h1>全部课程</h1>
+    </div>
+    <div class="ui-grid-a" style="margin:0 auto;">
+        <div data-role="content">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" >课程类型排列</a></li>
+                    <li><a href="#" >课程时间排列</a></li>
+                </ul>
+            </div>
+            <div data-role="content" id ="pageone">
+                <div data-role="listview">
+                    <form method="post" action="demoform.asp">
+                        <div data-role="fieldcontain">
+                            <label for="search">搜索：</label>
+                            <input type="search" name="search" id="search" placeholder="搜索内容...">
+                        </div>
+                    </form>
+                </div>
+
+                <ul data-role="listview">
+                    <li data-role="list-divider">技术类课程</li>
+                    <li><a href="#">数据挖掘及应用</a></li>
+                    <li><a href="#">机器学习</a></li>
+                    <li><a href="#">海量数据处理</a></li>
+                    <li data-role="list-divider">管理类课程</li>
+                    <li><a href="#">软件工程过程与项目管理</a></li>
+                    <li><a href="#">软件体系结构与设计</a></li>
+                    <li><a href="#">软件需求工程</a></li>
+                    <li data-role="list-divider">金融类课程</li>
+                    <li><a href="#">金融风险管理</a></li>
+                    <li><a href="#">金融运营管理</a></li>
+                </ul>
+            </div>
+        </div>
+        <p></p>
+    </div>
+</div>
+
+</body>
+</html>
